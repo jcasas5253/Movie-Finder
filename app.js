@@ -1,7 +1,5 @@
 $( document ).ready(function() {
 var search = [];
-var mykey = config.key;
-var myhost = config.host;
 
 $( ".btn-outline-warning" ).click(function() {
     $('.navbar').css("display","none");
@@ -20,8 +18,8 @@ var settings = {
 	"url": "https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?term=" + search,
 	"method": "GET",
 	"headers": {
-		"x-rapidapi-host": myhost,
-		"x-rapidapi-key": mykey
+		"x-rapidapi-host": "utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com",
+		"x-rapidapi-key": "f16486cf4cmsh942313c50ced177p116916jsn88a84633235d"
 	}
 }
 

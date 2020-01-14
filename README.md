@@ -4,3 +4,5 @@ This site is exactly what it sounds like. Simply search for any movie or televis
 This site was built using HTML5, CSS3, Javascript, jquery, and Utelly API.
 
 ![Screenshot (130)](https://user-images.githubusercontent.com/43353267/72372799-e8c17c00-36bb-11ea-9bcc-0c860a602e46.png)
+
+![Screenshot (131)](https://user-images.githubusercontent.com/43353267/72372843-01ca2d00-36bc-11ea-8132-64bd5d75c1fe.png)

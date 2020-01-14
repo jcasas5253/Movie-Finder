@@ -1,8 +1,9 @@
 $( document ).ready(function() {
 var search = [];
 
-$( ".btn-outline-warning" ).click(function() {
-    $('.navbar').css("display","none");
+    $(".btn-outline-warning").click(function () {
+        $('.form-inline').css("display", "none");
+    //$('.navbar').css("display","none");
     $('.title-0, .title-2, .title-3').empty();
     $('.main-container').css("background-color","black");
     $('.main-container').css("padding-bottom","15px");

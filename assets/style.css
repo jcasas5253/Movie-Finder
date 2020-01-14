@@ -61,6 +61,7 @@ h1, li {
 .mr-sm-2 {
     color: #fff !important;
     background-color: #343a40 !important;
+    width: 50% !important;
 }
 .btn-warning {
     display: block;
@@ -73,4 +74,7 @@ h1, li {
 }
 .navbar {
     background-color: black !important;
+}
+.form-inline{
+    display: inherit !important;
 }

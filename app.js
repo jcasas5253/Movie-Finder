@@ -12,7 +12,7 @@ $(document).ready(function () {
         $('.main-container').css("padding-left", "15px");
         $('.main-container').css("padding-right", "15px");
         $('.main-container').css("border-radius", "20px");
-        $('.container').before('<button onClick="window.location.reload();" class="btn btn-warning">New Search</button>');
+        $('.container').before('<button onClick="window.location.reload();" class="btn btn-warning new-search">New Search</button>');
         $('.btn-warning').css("position", "absolute");
         $('.btn-warning').css("top", "100px");
         $('.btn-warning').css("background-color", "rgb(130, 0, 0)");

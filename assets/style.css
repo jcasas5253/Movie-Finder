@@ -35,8 +35,7 @@ body {
 }
 .container {
     display: block;
-    background: url("https://images.pexels.com/photos/11872650/pexels-photo-11872650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center fixed;
-    border-radius: 10px;
+    background: url("https://images.pexels.com/photos/7991180/pexels-photo-7991180.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center fixed;
 }
 .feedImg {
     height: 200px;   
@@ -81,12 +80,17 @@ h1, li {
 }
 .btn-outline-warning {
     color: #fff;
-    border-color: rgb(130, 0, 0);
+    border-color: #fff;
 }
 .btn-outline-warning:hover {
-    color: #fff;
-    background-color: rgb(130, 0, 0);
-    border-color: rgb(130, 0, 0);
+    color: black;
+    background-color: #fff;
+    border-color: black;
+}
+.new-search:hover {
+    background-color: #fff !important;
+    color: black !important;
+    border-color: #fff !important;
 }
 .navbar {
     background-color: black !important;
@@ -95,7 +99,7 @@ h1, li {
     display: inherit !important;
 }
 .form-control {
-    border-color: rgb(130, 0, 0) !important;
+    border-color: #fff !important;
 }
 @media only screen and (max-width : 575px) {
     .form-control {

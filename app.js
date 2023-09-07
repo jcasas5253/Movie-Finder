@@ -50,7 +50,7 @@ $(document).ready(function () {
             $('.main-container').append('<a target="_blank" class="url-4">Watch Now</a>');
             $('.url-4').attr('href', response.results[0].locations[3].url);
             $('.main-container').append('<li>' + response.results[0].locations[4].display_name + '</li>');
-            $('.main-container').append('<a target="_blank" class="url-5">Watch Now</a>');
+            $('.main-container').append('<a target="_blank" class="url-5" style="margin-bottom:25px;">Watch Now</a>');
             $('.url-5').attr('href', response.results[0].locations[4].url);
         });
     })

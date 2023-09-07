@@ -3,7 +3,9 @@ body {
     padding: 0;
     font-family: "arial",heletica,sans-serif;
     font-size: 12px;
-    background-color: black;
+    background: url(../background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
  
 @-webkit-keyframes animate {
@@ -35,7 +37,6 @@ body {
 }
 .container {
     display: block;
-    background: url("https://images.pexels.com/photos/7991180/pexels-photo-7991180.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center fixed;
 }
 .feedImg {
     height: 200px;   
@@ -93,7 +94,10 @@ h1, li {
     border-color: #fff !important;
 }
 .navbar {
-    background-color: black !important;
+    background-color: #2a2b2e !important;
+}
+.nav-link {
+    color: #fff !important;
 }
 .form-inline{
     display: inherit !important;
@@ -104,6 +108,11 @@ h1, li {
 @media only screen and (max-width : 991px) {
     .new-search {
         top:0 !important;
+    }
+}
+@media (min-width: 1200px)  {
+    .container {
+        max-width: 700px !important;
     }
 }
 @media only screen and (max-width : 575px) {

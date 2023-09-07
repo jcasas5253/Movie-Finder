@@ -35,7 +35,7 @@ body {
 }
 .container {
     display: block;
-    background: url("https://img.freepik.com/free-vector/red-movie-theater-seats-with-curtains-background_1017-38388.jpg?w=1380&t=st=1694045623~exp=1694046223~hmac=b257e566f53ae130a2c9de3ddd8535298e9bb27439e77228bdf9abd723785115") no-repeat center center fixed;
+    background: url("https://images.pexels.com/photos/11872650/pexels-photo-11872650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center fixed;
     border-radius: 10px;
 }
 .feedImg {

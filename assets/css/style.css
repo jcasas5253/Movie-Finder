@@ -51,15 +51,10 @@ html {
 .theater-container {
     text-align: center;
     padding-top: 30px;
-    padding-left: 25px;
+    padding-left: 10px;
     padding-right: 25px;
     margin-bottom: 30px;
-    overflow-x: hidden !important;
     width: 500px;
-    /*position: absolute;
-    top: 20%;
-    left: 37%;*/
-    overflow-y: scroll;
     background-color: #2a2b2e;
     border: 1px solid;
     border-color: #26bf47;
@@ -139,6 +134,9 @@ h1, li {
 .form-control {
     border-color: rgb(128, 0, 0);
     box-shadow: 0 0 10px rgb(128, 0, 0) !important;
+}
+.navbar-toggler {
+    background-color: darkgray !important;
 }
 @media only screen and (max-width : 991px) {
     .new-search {

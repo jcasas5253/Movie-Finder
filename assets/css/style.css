@@ -6,16 +6,16 @@ body {
     background: url(../../assets/images/background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: fit-content;
-    min-width: fit-content;
+    min-height: 100%;
+    min-width: 100%;
 }
 .theaterbody {
     background: url();
     background-color: black;
 }
 html {
-    min-height: fit-content;
-    min-width: fit-content;
+    min-height: 100%;
+    min-width: 100%;
 }
  
 @-webkit-keyframes animate {

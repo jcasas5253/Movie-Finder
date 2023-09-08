@@ -202,11 +202,8 @@ h1, li {
     .up-btn {
         left: 85%;
     }
-}
-
-@media only screen and (max-width : 389px) {
-    .col {
-        flex-grow: 0 !important;
+    .theater-container {
+        width: 100% !important;
     }
 }
 

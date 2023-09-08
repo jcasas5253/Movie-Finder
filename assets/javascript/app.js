@@ -54,48 +54,6 @@ $(document).ready(function () {
             $('.url-5').attr('href', response.results[0].locations[4].url);
         });
     })
-
-    var theaterId = window.location.href.split("/")[4];
-    // Make a request to the Fandango API to get the list of movies playing at the theater.
-    $.ajax({
-        url: "https://api.fandango.com/v1/theaters/" + theaterId + "/movies",
-        dataType: "json",
-        apikey: "dxxgq4rhz66h7542h3pe8bzu",
-        sig: "y4zKxENusZ",
-        success: function (data) {
-            // Loop through the list of movies and create a movie card for each one.
-            for (var i = 0; i < data.movies.length; i++) {
-                var movie = data.movies[i];
-
-                // Create a movie card element.
-                var movieCard = $("<div>");
-                movieCard.addClass("movie-card");
-
-                // Add the movie title to the movie card.
-                var movieTitle = $("<h2>");
-                movieTitle.text(movie.title);
-                movieCard.append(movieTitle);
-
-                // Add the movie poster image to the movie card.
-                var moviePoster = $("<img>");
-                moviePoster.attr("src", movie.posterUrl);
-                movieCard.append(moviePoster);
-
-                // Add the movie release date to the movie card.
-                var movieReleaseDate = $("<p>");
-                movieReleaseDate.text("Release Date: " + movie.releaseDate);
-                movieCard.append(movieReleaseDate);
-
-                // Add the movie rating to the movie card.
-                var movieRating = $("<p>");
-                movieRating.text("Rating: " + movie.rating);
-                movieCard.append(movieRating);
-
-                // Add the movie card to the DOM.
-                $(".movies").append(movieCard);
-            }
-        }
-    });
 });
 
     $('.mr-sm-2').keypress(function (e) {

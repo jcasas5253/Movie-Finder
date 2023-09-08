@@ -7,6 +7,9 @@ body {
     background-size: cover;
     background-position: center;
 }
+html {
+    height: 100%;
+}
  
 @-webkit-keyframes animate {
 	from {background-position:0 0;}
@@ -38,8 +41,22 @@ body {
 .container {
     display: block;
 }
+.theater-container {
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 525px;
+    overflow-x: hidden !important;
+    width: 500px;
+    /*position: absolute;
+    top: 20%;
+    left: 37%;*/
+    overflow-y: scroll;
+    background-color: #2a2b2e;
+}
 .feedImg {
-    height: 200px;   
+    height: 200px;
 }
 .main-container {
     text-align: center;

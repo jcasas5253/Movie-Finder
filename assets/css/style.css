@@ -3,7 +3,7 @@
     padding: 0;
     font-family: "arial",heletica,sans-serif;
     font-size: 12px;
-    background: url(../../assets/images/background1.jpg) no-repeat;
+    /*background: url(../../assets/images/background1.jpg) no-repeat;*/
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -96,7 +96,7 @@ html {
 .main-container {
     text-align: center;
     background-color: #2a2b2e;
-    background: rgba(0,0,0,0.93);
+    background: rgba(5,0,0,0.93);
     border-radius: 10px;
     border-color: rgb(128, 0, 0);
     box-shadow: 0 0 10px rgb(128, 0, 0) !important;
@@ -275,3 +275,12 @@ h1, li {
             left: 80%;
         }
     }
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -999;
+}

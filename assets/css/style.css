@@ -144,6 +144,12 @@ h1, li {
     .new-search {
         top:0 !important;
     }
+    .footer {
+        display: none;
+    }
+    .theater-container {
+        width: 300px !important;
+    }
 }
 @media (min-width: 1200px)  {
     .container {

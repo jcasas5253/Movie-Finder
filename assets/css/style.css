@@ -204,8 +204,14 @@ h1, li {
     }
 }
 
-@media only screen and (max-width : 315px) {
-    .up-btn {
-        left: 80%;
+@media only screen and (max-width : 389px) {
+    .col {
+        flex-grow: 0 !important;
     }
 }
+
+    @media only screen and (max-width : 315px) {
+        .up-btn {
+            left: 80%;
+        }
+    }

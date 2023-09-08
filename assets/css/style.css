@@ -6,9 +6,16 @@ body {
     background: url(../../assets/images/background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    min-height: fit-content;
+    min-width: fit-content;
+}
+.theaterbody {
+    background: url();
+    background-color: black;
 }
 html {
-    height: 100%;
+    min-height: fit-content;
+    min-width: fit-content;
 }
  
 @-webkit-keyframes animate {
@@ -54,6 +61,9 @@ html {
     left: 37%;*/
     overflow-y: scroll;
     background-color: #2a2b2e;
+    border: 1px solid;
+    border-color: #26bf47;
+    box-shadow: 0 0 10px #26bf47;
 }
 .feedImg {
     height: 200px;

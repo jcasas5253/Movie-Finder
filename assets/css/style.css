@@ -111,14 +111,21 @@ h1, li {
     border-color: #fff;
 }
 .btn-outline-warning:hover {
-    color: black;
-    background-color: #fff;
-    border-color: black;
+    background-color: rgb(128, 0, 0);
+    color: #fff!important;
+}
+.buy-tickets:hover {
+    background-color: #26bf47 !important;
+}
+.my-sm-0:not(:disabled):not(.disabled):active {
+    background-color: rgb(128, 0, 0) !important;
+}
+.buy-tickets:first-child:active {
+    background-color: #26bf47 !important;
 }
 .new-search:hover {
-    background-color: #fff !important;
-    color: black !important;
-    border-color: #fff !important;
+    background-color: rgb(128, 0, 0);
+    color: #fff !important;
 }
 .navbar {
     background-color: #2a2b2e !important;
@@ -130,7 +137,8 @@ h1, li {
     display: inherit !important;
 }
 .form-control {
-    border-color: #fff !important;
+    border-color: rgb(128, 0, 0);
+    box-shadow: 0 0 10px rgb(128, 0, 0) !important;
 }
 @media only screen and (max-width : 991px) {
     .new-search {

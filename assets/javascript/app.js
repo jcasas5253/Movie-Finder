@@ -54,6 +54,7 @@ $(document).ready(function () {
             $('.url-5').attr('href', response.results[0].locations[4].url);
         });
     })
+
 });
 
     $('.mr-sm-2').keypress(function (e) {

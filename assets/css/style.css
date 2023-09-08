@@ -125,6 +125,14 @@ h1, li {
 .navbar {
     background-color: #2a2b2e !important;
 }
+.theater-nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navbar-toggler-icon {
+    display: none !important;
+}
 .nav-link {
     color: #fff !important;
 }
@@ -138,6 +146,28 @@ h1, li {
 .navbar-toggler {
     background-color: darkgray !important;
 }
+.up-btn {
+    position: absolute;
+    left: 95%;
+    background-color: #26bf47;
+    height: 40px;
+    width: 40px;
+    border-color: #fff;
+    box-shadow: 0 0 10px #fff;
+    border-radius: 100px;
+    z-index: 999;
+}
+.up-btn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 700px !important;
+    }
+}
+
 @media only screen and (max-width : 991px) {
     .new-search {
         top:0 !important;
@@ -148,14 +178,34 @@ h1, li {
     .footer {
         display: none;
     }
-}
-@media (min-width: 1200px)  {
-    .container {
-        max-width: 700px !important;
+    .up-btn {
+        left: 93%;
     }
 }
+
+@media only screen and (max-width : 720px) {
+    .up-btn {
+        left: 91%;
+    }
+}
+
 @media only screen and (max-width : 575px) {
-    .form-control {
-        width: 100% !important;
+     .form-control {
+         width: 100% !important;
+     }
+     .up-btn {
+         left: 89%;
+     }
+}
+
+@media only screen and (max-width : 420px) {
+    .up-btn {
+        left: 85%;
+    }
+}
+
+@media only screen and (max-width : 315px) {
+    .up-btn {
+        left: 80%;
     }
 }

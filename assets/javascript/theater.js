@@ -22,3 +22,10 @@ $.ajax(settings).done(function (response) {
     }
     $('.movie-overview').after('<a href="https://www.fandango.com/" target="_blank"><button class="btn btn-outline-warning buy-tickets" type="button" style="margin-top: 50px; margin-bottom: 50px; border: 1px solid !important; border-color: #26bf47 !important; box-shadow: 0 0 10px #26bf47 !important;">Buy Tickets!</button></a>');
 });
+
+$(".up-btn").click(function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $("body").offset().top
+    }, 1000);
+});

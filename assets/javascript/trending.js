@@ -1,7 +1,7 @@
 const settings = {
     async: true,
     crossDomain: true,
-    url: 'https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1',
+    url: 'https://api.themoviedb.org/3/trending/tv/day?language=en-US',
     method: 'GET',
     headers: {
         accept: 'application/json',
@@ -14,18 +14,17 @@ $.ajax(settings).done(function (response) {
     for (const movie of movies) {
         const movieEl = document.createElement('li');
         movieEl.innerHTML = `
-      <img src="https://image.tmdb.org/t/p/w185/${movie.poster_path}" alt="${movie.title}">
-      <h3 style="margin-top: 20px;">${movie.title}</h3>
-      <p class="movie-overview">${movie.overview}</p>
+      <img src="https://image.tmdb.org/t/p/w185/${movie.poster_path}" alt="${movie.original_name}">
+      <h3 style="margin-top: 20px;">${movie.original_name}</h3>
+      <p class="tv-overview">${movie.overview}</p>
     `;
         document.getElementById('movies').appendChild(movieEl);
     }
-    $('.movie-overview').after('<a href="https://www.fandango.com/" target="_blank"><button class="btn btn-outline-warning buy-tickets" type="button" style="margin-top: 50px; margin-bottom: 50px; border: 1px solid !important; border-color: #26bf47 !important; box-shadow: 0 0 10px #26bf47 !important;">Buy Tickets!</button></a>');
-});
 
-      $(".up-btn").click(function (e) {
+    $(".up-btn1").click(function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $("body").offset().top
         }, 1000);
     });
+});

@@ -155,6 +155,9 @@ h1, li {
 .nav-link {
     color: #fff !important;
 }
+.nav-link:hover {
+    transform: scale(1.05);
+}
 .form-inline{
     display: inherit !important;
 }

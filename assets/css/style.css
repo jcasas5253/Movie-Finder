@@ -145,6 +145,9 @@ h1, li {
     .theater-container {
         width: 300px !important;
     }
+    .footer {
+        display: none;
+    }
 }
 @media (min-width: 1200px)  {
     .container {

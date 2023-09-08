@@ -15,7 +15,7 @@ $.ajax(settings).done(function (response) {
         const movieEl = document.createElement('li');
         movieEl.innerHTML = `
       <img src="https://image.tmdb.org/t/p/w185/${movie.poster_path}" alt="${movie.title}">
-      <h3>${movie.title}</h3>
+      <h3 style="margin-top: 20px;">${movie.title}</h3>
       <p class="movie-overview">${movie.overview}</p>
     `;
         document.getElementById('movies').appendChild(movieEl);

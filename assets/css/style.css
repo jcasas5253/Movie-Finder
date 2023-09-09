@@ -223,6 +223,9 @@ h1, li {
     transform: scale(1.05);
     cursor: pointer;
 }
+#movies {
+    padding-right: 40px;
+}
 
 @media (min-width: 1200px) {
     .container {

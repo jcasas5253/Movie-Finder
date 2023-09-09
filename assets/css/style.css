@@ -163,6 +163,9 @@ h1, li {
 .navbar {
     background-color: #2a2b2e !important;
 }
+.navbar-nav {
+    flex-direction: row !important;
+}
 .theater-nav, .trending-nav {
     position: sticky;
     top: 0;

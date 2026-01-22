@@ -1,0 +1,55 @@
+<!-- Search Bar -->
+<div class="mb-8">
+    <div class="relative" style="margin-top: 25px;">
+        <input type="text"
+               id="issueSearch"
+               list="issueSuggestions"
+               placeholder="Search Previous Issue"
+               onkeydown="if(event.key === 'Enter') handleSearch()"
+               class="w-full py-2 pl-4 pr-10 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-ais-accent transition duration-200"
+               style="background-color: #fff; color: black; border: 1px solid #ccc;">
+
+        <datalist id="issueSuggestions">
+            <option value="01-2026">
+            <option value="12-2025">
+            <option value="11-2025">
+            <option value="10-2025">
+            <option value="09-2025">
+            <option value="08-2025">
+        </datalist>
+
+        <svg onclick="handleSearch()" class="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" style="color: black;"></path>
+        </svg>
+    </div>
+</div>
+
+
+// 1. Function to handle the navigation
+window.handleSearch = function () {
+    const inputField = document.getElementById('issueSearch');
+    const query = inputField.value.trim();
+    const datePattern = /^(0[1-9]|1[0-2])-\d{4}$/;
+
+    if (datePattern.test(query)) {
+        window.open(`https://www.aisinsurance.com/dec-page/${query}.aspx`, '_blank');
+    } else {
+        alert("Please use the MM-YYYY format (e.g., 01-2025)");
+    }
+};
+
+// 2. Automatically generate the last 12 months of suggestions
+(function autoFillSuggestions() {
+    const datalist = document.getElementById('issueSuggestions');
+    const now = new Date();
+
+    for (let i = 0; i < 12; i++) {
+        const date = new Date(now.getFullYear(), now.getMonth() - i, 1);
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const year = date.getFullYear();
+
+        const option = document.createElement('option');
+        option.value = `${month}-${year}`;
+        datalist.appendChild(option);
+    }
+})();
